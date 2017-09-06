@@ -24,6 +24,8 @@ public:
 	Puntero<Tabla<C, V>> CrearTablaHashCerrado(nat cubetas, Puntero<FuncionHash<C>> fHash, const Comparador<C>& comp);
 
 	// Ejercicio 2: AVL
+	//Pre: El arbol es binario
+	//Pos: Devuelve true si el arbol esta balanceado, false en caso contrario
 	template <class T>
 	bool EsAVL(Puntero<NodoArbol<T>> raiz, const Comparador<T>& comp);
 

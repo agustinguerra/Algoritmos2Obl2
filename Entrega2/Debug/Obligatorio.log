@@ -1,0 +1,8 @@
+﻿  CasoDePrueba.cpp
+  main.cpp
+  Sistema.cpp
+  SistemaTemplates.cpp
+c:\users\agustin\documents\github\algoritmos2obl2\entrega2\sistematemplates.cpp(37): error C2065: 'Math': undeclared identifier (compiling source file CasoDePrueba.cpp)
+  c:\users\agustin\documents\github\algoritmos2obl2\entrega2\casodeprueba.cpp(514): note: see reference to function template instantiation 'bool Sistema::EsAVL<int>(Puntero<NodoArbol<int>>,const Comparador<int> &)' being compiled
+c:\users\agustin\documents\github\algoritmos2obl2\entrega2\sistematemplates.cpp(37): error C2228: left of '.abs' must have class/struct/union (compiling source file CasoDePrueba.cpp)
+  c:\users\agustin\documents\github\algoritmos2obl2\entrega2\sistematemplates.cpp(37): note: type is 'unknown-type' (compiling source file CasoDePrueba.cpp)
