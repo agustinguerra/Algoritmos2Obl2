@@ -97,12 +97,19 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CasoDePrueba.cpp" />
+    <ClCompile Include="HashAbierto.cpp" />
+    <ClCompile Include="IteradorListaOrdImp.cpp" />
+    <ClCompile Include="ListaOrdImp.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Sistema.cpp" />
     <ClCompile Include="SistemaTemplates.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CasoDePrueba.h" />
+    <ClInclude Include="HashAbierto.h" />
+    <ClInclude Include="IteradorListaOrdImp.h" />
+    <ClInclude Include="ListaOrd.h" />
+    <ClInclude Include="ListaOrdImp.h" />
     <ClInclude Include="NodoArbol.h" />
     <ClInclude Include="Sistema.h" />
     <ClInclude Include="Tabla.h" />

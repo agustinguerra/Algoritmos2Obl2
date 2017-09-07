@@ -39,6 +39,15 @@
     <ClCompile Include="SistemaTemplates.cpp">
       <Filter>Implementacion</Filter>
     </ClCompile>
+    <ClCompile Include="ListaOrdImp.cpp">
+      <Filter>Implementacion\Tads</Filter>
+    </ClCompile>
+    <ClCompile Include="IteradorListaOrdImp.cpp">
+      <Filter>Implementacion</Filter>
+    </ClCompile>
+    <ClCompile Include="HashAbierto.cpp">
+      <Filter>Implementacion\Tads\Tabla\Hash abierto</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CasoDePrueba.h">
@@ -52,6 +61,18 @@
     </ClInclude>
     <ClInclude Include="Tabla.h">
       <Filter>Implementacion\Tads\Tabla</Filter>
+    </ClInclude>
+    <ClInclude Include="ListaOrd.h">
+      <Filter>Implementacion\Tads</Filter>
+    </ClInclude>
+    <ClInclude Include="ListaOrdImp.h">
+      <Filter>Implementacion\Tads</Filter>
+    </ClInclude>
+    <ClInclude Include="IteradorListaOrdImp.h">
+      <Filter>Implementacion</Filter>
+    </ClInclude>
+    <ClInclude Include="HashAbierto.h">
+      <Filter>Implementacion\Tads\Tabla\Hash abierto</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
