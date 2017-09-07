@@ -5,7 +5,7 @@
 
 Puntero<Sistema> Inicializar()
 {
-	return new Sistema("diccionario");
+	return new Sistema("diccionario.txt");
 }
 
 void main()

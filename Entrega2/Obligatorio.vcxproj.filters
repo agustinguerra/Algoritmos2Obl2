@@ -45,7 +45,7 @@
     <ClCompile Include="IteradorListaOrdImp.cpp">
       <Filter>Implementacion</Filter>
     </ClCompile>
-    <ClCompile Include="HashAbierto.cpp">
+    <ClCompile Include="TablaHashAbierto.cpp">
       <Filter>Implementacion\Tads\Tabla\Hash abierto</Filter>
     </ClCompile>
   </ItemGroup>
@@ -71,7 +71,10 @@
     <ClInclude Include="IteradorListaOrdImp.h">
       <Filter>Implementacion</Filter>
     </ClInclude>
-    <ClInclude Include="HashAbierto.h">
+    <ClInclude Include="Asociacion.h">
+      <Filter>Implementacion\Tads</Filter>
+    </ClInclude>
+    <ClInclude Include="TablaHashAbierto.h">
       <Filter>Implementacion\Tads\Tabla\Hash abierto</Filter>
     </ClInclude>
   </ItemGroup>

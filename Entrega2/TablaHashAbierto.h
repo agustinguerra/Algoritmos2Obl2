@@ -2,10 +2,10 @@
 
 
 template <class D, class R>
-class HashAbierto : public Table<D, R>
+class TablaHashAbierto : public Table<D, R>
 {
 public:
-	~HashAbierto() { }
+	~TablaHashAbierto() { }
 
 	/* CONSTRUCTORAS */
 
@@ -52,9 +52,10 @@ public:
 	Iterador<T> ObtenerIterador() const override;
 
 private:
-	Array<Puntero<Lista<Asociacion<D, R>>>> laTabla;
-	Puntero<FunctionHash<Asociacion<D, R>>> pFUnc;
+	Array<Puntero<ListaOrdImp<Asociacion<D, R>>>> laTabla;
+	Puntero<FunctionHash<D>> pFunc;
+	nat tamano;
 
 };
 
-#include "HashAbierto.cpp"
+#include "TablaHashAbierto.cpp"
