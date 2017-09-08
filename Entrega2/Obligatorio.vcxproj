@@ -105,7 +105,6 @@
     <ClCompile Include="SistemaTemplates.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Asociacion.h" />
     <ClInclude Include="CasoDePrueba.h" />
     <ClInclude Include="TablaHashAbierto.h" />
     <ClInclude Include="IteradorListaOrdImp.h" />

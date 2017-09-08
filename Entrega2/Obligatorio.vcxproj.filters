@@ -71,9 +71,6 @@
     <ClInclude Include="IteradorListaOrdImp.h">
       <Filter>Implementacion</Filter>
     </ClInclude>
-    <ClInclude Include="Asociacion.h">
-      <Filter>Implementacion\Tads</Filter>
-    </ClInclude>
     <ClInclude Include="TablaHashAbierto.h">
       <Filter>Implementacion\Tads\Tabla\Hash abierto</Filter>
     </ClInclude>

@@ -1,8 +1,9 @@
 #pragma once
 
+#include "Tupla.h"
 
-template <class D, class R>
-class TablaHashAbierto : public Table<D, R>
+template <class C, class V>
+class TablaHashAbierto : public Table<C, V>
 {
 public:
 	~TablaHashAbierto() { }
@@ -22,6 +23,10 @@ public:
 	void BorrarTodos() override;
 
 	/* PREDICADOS */
+
+	//Pre: -
+	//Pos: Devuelve el siguiente numero primo
+	int sigPrimo(int num);
 
 	//PRE: - 
 	//POS: Retorna true si está vacía, false sino.
@@ -52,7 +57,7 @@ public:
 	Iterador<T> ObtenerIterador() const override;
 
 private:
-	Array<Puntero<ListaOrdImp<Asociacion<D, R>>>> laTabla;
+	Array<Puntero<ListaOrdImp<Tupla<C, V>>>> laTabla;
 	Puntero<FunctionHash<D>> pFunc;
 	nat tamano;
 

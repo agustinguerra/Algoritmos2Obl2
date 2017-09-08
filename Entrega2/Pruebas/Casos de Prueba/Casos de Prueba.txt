@@ -359,12 +359,12 @@
 
 ----------------------------- Testeo --------------------------------
   Comentario: El parametro no es un AVL
-  Retorno obtenido ERROR, se esperaba OK
+  Retorno obtenido OK
 ---------------------------------------------------------------------
 
 ----------------------------- Testeo --------------------------------
   Comentario: El parametro no es un AVL
-  Retorno obtenido ERROR, se esperaba OK
+  Retorno obtenido OK
 ---------------------------------------------------------------------
 
 ----------------------------- Testeo --------------------------------
@@ -378,7 +378,7 @@
 ---------------------------------------------------------------------
 
   +------------------------------+
-    Pruebas Correctas : 6
-    Pruebas Incorrectas: 51
+    Pruebas Correctas : 8
+    Pruebas Incorrectas: 49
     Pruebas NI: 0
   +------------------------------+

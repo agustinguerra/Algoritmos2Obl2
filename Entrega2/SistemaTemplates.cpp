@@ -15,44 +15,59 @@ Puntero<Tabla<C, V>> Sistema::CrearTablaHashCerrado(nat cubetas, Puntero<Funcion
 	return NULL;
 }
 
-bool sonTodosMayores(Puntero<NodoArbol<T>> nodo, const Comparador<T>& comp) {
+
+//Pre: es un arbol binario
+//Pos: devuelve true si todos los elementos son menores al a comparar
+template <class T>
+bool sonTodosMenores(Puntero<NodoArbol<T>> nodo, const Comparador<T>& comp, const T& dato) {
+	if (nodo != NULL) {
+		if (comp.Comparar(dato, nodo->dato) == MAYOR) {
+			return sonTodosMenores(nodo->izq, comp, dato) && sonTodosMenores(nodo->der, comp, dato);
+		}
+		else {
+			return false;
+		}
+	}
+	else {
+		return true;
+	}
+}
 
 
-	// Return maximum of 3 values:
-	// 1) Root's data 2) Max in Left Subtree
-	// 3) Max in right subtree
-	T res = nodo->dato;
-	if(nodo->izq!=NULL)
-		T lres = maximo(nodo->izq);
-	if(nodo->der!=NULL)
-	T rres = maximo(root->right);
-
-	if (lres > res)
-		res = lres;
-	if (rres > res)
-		res = rres;
-	return res;
+//Pre: es un arbol binario
+//Pos: devuelve true si todos los elementos son mayores al a comparar
+template <class T>
+bool sonTodosMayores(Puntero<NodoArbol<T>> nodo, const Comparador<T>& comp,const T& dato) {
+	if (nodo != NULL) {
+		if (comp.Comparar(dato, nodo->dato) == MENOR) {
+			return sonTodosMayores(nodo->izq, comp, dato) && sonTodosMayores(nodo->der, comp, dato);
+		}
+		else {
+			return false;
+		}
+	}
+	else {
+		return true;
+	}
 }
 
 
 //Pre: es un abrol binario
 //Pos: devuelve true si es abb o false en caso contrario
 template <class T>
-int esAbb(Puntero<NodoArbol<T>> nodo, const Comparador<T>& comp)
+bool esAbb(Puntero<NodoArbol<T>> nodo, const Comparador<T>& comp)
 {
 	if (nodo == NULL)
 		return(true);
-
-	if (nodo->izq != NULL && comp.Compare(maximo(nodo->izq),nodo->dato)==MAYOR)
-		return(false);
-
-	if (nodo->der != NULL && comp.Compare(minimo(nodo->der),nodo->dato)==MENOR)
-		return(false);
-
-	if (!esAbb(nodo->izq) || !esAbb(nodo->der))
-		return(false);
-
-	return(true);
+	bool izq = true;
+	bool der = true;
+	if (nodo->izq != NULL) {
+		izq = sonTodosMenores(nodo->izq, comp, nodo->dato);
+	}
+	if (nodo->der != NULL) {
+		der = sonTodosMayores(nodo->der, comp, nodo->dato);
+	}
+	return izq && der;
 }
 
 
@@ -67,7 +82,7 @@ int alturaNodo(Puntero<NodoArbol<T>> nodo, const Comparador<T>& comp) {
 	}
 	else {
 		if (alturaNodo(nodo->izq,comp) > alturaNodo(nodo->der,comp)) {
-			return 1 + alturaNodo(nodo->izq);
+			return 1 + alturaNodo(nodo->izq,comp);
 		}
 		else {
 			return 1 + alturaNodo(nodo->der,comp);
@@ -78,17 +93,31 @@ int alturaNodo(Puntero<NodoArbol<T>> nodo, const Comparador<T>& comp) {
 //Pre: El arbol es binario
 //Pos: Devuelve true si el arbol esta balanceado, false en caso contrario
 template <class T>
-bool Sistema::EsAVL(Puntero<NodoArbol<T>> raiz, const Comparador<T>& comp)
-{
+bool EsAVLAux(Puntero<NodoArbol<T>> raiz, const Comparador<T>& comp) {
 	if (raiz == NULL) {
 		return true;
 	}
-	int balance = alturaNodo(raiz->izq,comp) - alturaNodo(raiz->der,comp);
-	if ((balance>1)||(balance<-1)) {
+	int balance = alturaNodo(raiz->izq, comp) - alturaNodo(raiz->der, comp);
+	if ((balance>1) || (balance<-1)) {
 		return false;
 	}
 	else {
-		return EsAVL(raiz->izq,comp) && EsAVL(raiz->der,comp);
+		return EsAVLAux(raiz->izq, comp) && EsAVLAux(raiz->der, comp);
+	}
+}
+
+//Pre: El arbol es binario
+//Pos: Devuelve true si el arbol esta balanceado, false en caso contrario
+template <class T>
+bool Sistema::EsAVL(Puntero<NodoArbol<T>> raiz, const Comparador<T>& comp)
+{
+	if (esAbb(raiz, comp)) {
+		bool ret;
+		ret = EsAVLAux(raiz, comp);
+		return ret;
+	}
+	else {
+		return false;
 	}
 }
 
