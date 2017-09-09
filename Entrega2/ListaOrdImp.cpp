@@ -4,6 +4,16 @@
 #include "ListaOrdImp.h"
 #include "IteradorListaOrdImp.h"
 
+
+//PRE: -
+//POS: Crea la lista ordenada
+template <class T>
+ListaOrdImp<T>::ListaOrdImp() {
+	this->lista = nullptr;
+	this->largo = 0;
+}
+
+
 //PRE: -
 //POS: Crea la lista ordenada
 template <class T>
@@ -49,7 +59,7 @@ void ListaOrdImp<T>::InsertarOrdenado(const T& e) {
 // PRE: 
 // POS: Inserta el elemento al principio
 template <class T>
-void InsertarPrincipio(const T& e) {
+void ListaOrdImp<T>::InsertarPrincipio(const T& e) {
 	this->largo = this->largo + 1;
 	if (this->lista != NULL) {
 		Puntero<NodoLista<T>> nodo = new NodoLista<T>(e);
@@ -161,5 +171,17 @@ Iterador<T> ListaOrdImp<T>::ObtenerIterador() const {
 	return new IteradorListaOrdImp<T>(this->lista);
 }
 
+template <class T>
+int ListaOrdImp<T>::indexOf(const T& e) {
+	Puntero<NodoLista<T>> aux = this->lista;
+	int contador = 0;
+	while (aux != NULL) {
+		if (comparador.Comparar(e, this->lista->dato) == IGUALES) {
+			return contador;
+		}
+		contador = contador + 1;
+	}
+	return -1;
+}
 
 #endif

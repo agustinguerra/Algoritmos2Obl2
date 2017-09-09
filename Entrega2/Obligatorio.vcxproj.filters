@@ -48,6 +48,9 @@
     <ClCompile Include="TablaHashAbierto.cpp">
       <Filter>Implementacion\Tads\Tabla\Hash abierto</Filter>
     </ClCompile>
+    <ClCompile Include="ComparadorTupla.cpp">
+      <Filter>Implementacion</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CasoDePrueba.h">
@@ -73,6 +76,9 @@
     </ClInclude>
     <ClInclude Include="TablaHashAbierto.h">
       <Filter>Implementacion\Tads\Tabla\Hash abierto</Filter>
+    </ClInclude>
+    <ClInclude Include="ComparadorTupla.h">
+      <Filter>Implementacion</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

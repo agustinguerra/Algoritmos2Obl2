@@ -1,17 +1,23 @@
 #pragma once
 
 #include "Tupla.h"
+#include "Tabla.h"
 #include "Array.h"
 #include "ListaOrdImp.h"
 #include "FuncionHash.h"
+#include "ComparadorTupla.h"
 
 template <class C, class V>
-class TablaHashAbierto : public Table<C, V>
-{
+class TablaHashAbierto : public Tabla<C, V>{
 public:
 	~TablaHashAbierto() { }
 
 	/* CONSTRUCTORAS */
+
+
+	//PRE: -
+	//POS: Construye el hash
+	TablaHashAbierto(nat cubetas, Puntero<FuncionHash<C>> fHash, const Comparador<C> comp);
 
 	//PRE: T(c) no está definida y la tabla no está llena
 	//POS: Define T(c) = v
@@ -63,14 +69,16 @@ public:
 
 	//PRE: -
 	//POS: Devuelve el iterador
-	Iterador<T> ObtenerIterador() const override;
+	Iterador<Tupla<C,V>> ObtenerIterador() const override;
 
 private:
 	Array<Puntero<ListaOrdImp<Tupla<C, V>>>> laTabla;
-	Puntero<FunctionHash<C>> pFunc;
+	Puntero<FuncionHash<C>> pFunc;
 	int tamano;
 	int ocupados;
-
+	int largo;
+	Comparador<C> comparador;
+	Comparador<Tupla<C, V>> elComparador;
 };
 
 #include "TablaHashAbierto.cpp"

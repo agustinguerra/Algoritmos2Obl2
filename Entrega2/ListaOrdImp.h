@@ -2,6 +2,7 @@
 
 #include "ListaOrd.h"
 #include "Puntero.h"
+#include "ComparadorTupla.h"
 #include <iostream>
 
 template <class T>
@@ -16,6 +17,11 @@ template <class T>
 class ListaOrdImp : public ListaOrd<T> {
 public:
 	~ListaOrdImp() {};
+
+	//PRE: -
+	//POS: Construye la lista ordenada
+	ListaOrdImp();
+
 	//PRE: -
 	//POS: Construye la lista ordenada
 	ListaOrdImp(const Comparador<T>& comp);
@@ -63,6 +69,10 @@ public:
 	//PRE -
 	//POS: Devuelve el iterador de la lista
 	Iterador<T> ObtenerIterador() const override;
+
+	//PRE: -
+	//POS: devuelve el indice del elemento
+	int indexOf(const T& e);
 
 private:
 	Puntero<NodoLista<T>> lista;

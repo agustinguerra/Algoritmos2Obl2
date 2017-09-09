@@ -2,11 +2,13 @@
 #define SISTEMATEMPLATES_CPP
 
 #include "Sistema.h"
+#include "TablaHashAbierto.h"
 
 template <class C, class V>
 Puntero<Tabla<C, V>> Sistema::CrearTablaHashAbierto(nat cubetas, Puntero<FuncionHash<C>> fHash, const Comparador<C>& comp)
 {
-	return NULL;
+	Puntero<Tabla<C,V>> tabla = new TablaHashAbierto<C,V>(cubetas, fHash, comp);
+	return tabla;
 }
 
 template <class C, class V>

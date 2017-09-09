@@ -97,6 +97,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CasoDePrueba.cpp" />
+    <ClCompile Include="ComparadorTupla.cpp" />
     <ClCompile Include="TablaHashAbierto.cpp" />
     <ClCompile Include="IteradorListaOrdImp.cpp" />
     <ClCompile Include="ListaOrdImp.cpp" />
@@ -106,6 +107,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CasoDePrueba.h" />
+    <ClInclude Include="ComparadorTupla.h" />
     <ClInclude Include="TablaHashAbierto.h" />
     <ClInclude Include="IteradorListaOrdImp.h" />
     <ClInclude Include="ListaOrd.h" />
