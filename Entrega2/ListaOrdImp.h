@@ -28,6 +28,10 @@ public:
 	// POS: e pertenece a la lista. La lista está ordenada y contiene todos los elementos que había en la lista antes de la inserción
 	void InsertarOrdenado(const T& e) override;
 
+	// PRE: 
+	// POS: Inserta el elemento al principio
+	void InsertarPrincipio(const T& e);
+
 	// PRE: La lista no está vacía
 	// POS: Retorna el primer elemento de la lista
 	const T& Cabeza() const override;

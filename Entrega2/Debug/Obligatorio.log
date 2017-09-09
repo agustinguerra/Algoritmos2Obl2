@@ -5,5 +5,86 @@
   main.cpp
   Sistema.cpp
   SistemaTemplates.cpp
-  Obligatorio.vcxproj -> C:\Users\Agustin\Documents\GitHub\Algoritmos2Obl2\Entrega2\Debug\Obligatorio.exe
-  Obligatorio.vcxproj -> Debug\Obligatorio.pdb (Full PDB)
+c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.h(9): error C2143: syntax error: missing ',' before '<' (compiling source file TablaHashAbierto.cpp)
+  c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.h(74): note: see reference to class template instantiation 'TablaHashAbierto<C,V>' being compiled (compiling source file TablaHashAbierto.cpp)
+c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.h(62): error C2065: 'Tabla': undeclared identifier (compiling source file TablaHashAbierto.cpp)
+c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.h(62): error C2977: 'Puntero': too many template arguments (compiling source file TablaHashAbierto.cpp)
+  c:\users\agustin\documents\github\algoritmos2obl2\framework\array.h(4): note: see declaration of 'Puntero' (compiling source file TablaHashAbierto.cpp)
+c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.h(62): error C2059: syntax error: '>' (compiling source file TablaHashAbierto.cpp)
+c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.h(62): error C2238: unexpected token(s) preceding ';' (compiling source file TablaHashAbierto.cpp)
+c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.h(66): error C2065: 'T': undeclared identifier (compiling source file TablaHashAbierto.cpp)
+c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.h(66): error C2923: 'Iterador': 'T' is not a valid template type argument for parameter 'T' (compiling source file TablaHashAbierto.cpp)
+c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.h(70): error C2065: 'FunctionHash': undeclared identifier (compiling source file TablaHashAbierto.cpp)
+c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.h(70): error C2974: 'Puntero': invalid template argument for 'T', type expected (compiling source file TablaHashAbierto.cpp)
+  c:\users\agustin\documents\github\algoritmos2obl2\framework\array.h(4): note: see declaration of 'Puntero' (compiling source file TablaHashAbierto.cpp)
+c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.h(70): error C2059: syntax error: '>' (compiling source file TablaHashAbierto.cpp)
+c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.h(70): error C2238: unexpected token(s) preceding ';' (compiling source file TablaHashAbierto.cpp)
+c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(18): error C2244: 'TablaHashAbierto::Agregar': unable to match function definition to an existing declaration
+  c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(11): note: see declaration of 'TablaHashAbierto::Agregar'
+  c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(18): note: definition
+  c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(18): note: 'void TablaHashAbierto::Agregar(const C &,const V &)'
+  c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(18): note: existing declarations
+  c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(18): note: 'void TablaHashAbierto<C,V>::Agregar(const C &,const V &)'
+c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(25): error C2244: 'TablaHashAbierto::Borrar': unable to match function definition to an existing declaration
+  c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(23): note: see declaration of 'TablaHashAbierto::Borrar'
+  c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(25): note: definition
+  c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(25): note: 'void TablaHashAbierto::Borrar(const C &)'
+  c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(25): note: existing declarations
+  c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(25): note: 'void TablaHashAbierto<C,V>::Borrar(const C &)'
+c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(36): error C2244: 'TablaHashAbierto::BorrarTodos': unable to match function definition to an existing declaration
+  c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(30): note: see declaration of 'TablaHashAbierto::BorrarTodos'
+  c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(36): note: definition
+  c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(36): note: 'void TablaHashAbierto::BorrarTodos(void)'
+  c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(36): note: existing declarations
+  c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(36): note: 'void TablaHashAbierto<C,V>::BorrarTodos(void)'
+c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(50): error C2244: 'TablaHashAbierto::EstaVacia': unable to match function definition to an existing declaration
+  c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(43): note: see declaration of 'TablaHashAbierto::EstaVacia'
+  c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(50): note: definition
+  c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(50): note: 'bool TablaHashAbierto::EstaVacia(void) const'
+  c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(50): note: existing declarations
+  c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(50): note: 'bool TablaHashAbierto<C,V>::EstaVacia(void) const'
+c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(57): error C2244: 'TablaHashAbierto::EstaLlena': unable to match function definition to an existing declaration
+  c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(55): note: see declaration of 'TablaHashAbierto::EstaLlena'
+  c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(57): note: definition
+  c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(57): note: 'bool TablaHashAbierto::EstaLlena(void) const'
+  c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(57): note: existing declarations
+  c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(57): note: 'bool TablaHashAbierto<C,V>::EstaLlena(void) const'
+c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(64): error C2244: 'TablaHashAbierto::EstaDefinida': unable to match function definition to an existing declaration
+  c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(62): note: see declaration of 'TablaHashAbierto::EstaDefinida'
+  c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(64): note: definition
+  c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(64): note: 'bool TablaHashAbierto::EstaDefinida(const C &) const'
+  c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(64): note: existing declarations
+  c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(64): note: 'bool TablaHashAbierto<C,V>::EstaDefinida(const C &) const'
+c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(93): error C2244: 'TablaHashAbierto::esPrimo': unable to match function definition to an existing declaration
+  c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(71): note: see declaration of 'TablaHashAbierto::esPrimo'
+  c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(93): note: definition
+  c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(93): note: 'bool TablaHashAbierto::esPrimo(int)'
+  c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(93): note: existing declarations
+  c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(93): note: 'bool TablaHashAbierto<C,V>::esPrimo(int)'
+c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(108): error C2244: 'TablaHashAbierto::sigPrimo': unable to match function definition to an existing declaration
+  c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(99): note: see declaration of 'TablaHashAbierto::sigPrimo'
+  c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(108): note: definition
+  c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(108): note: 'int TablaHashAbierto::sigPrimo(int)'
+  c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(108): note: existing declarations
+  c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(108): note: 'int TablaHashAbierto<C,V>::sigPrimo(int)'
+c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(115): error C2244: 'TablaHashAbierto::Obtener': unable to match function definition to an existing declaration
+  c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(113): note: see declaration of 'TablaHashAbierto::Obtener'
+  c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(115): note: definition
+  c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(115): note: 'const V &TablaHashAbierto::Obtener(const C &) const'
+  c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(115): note: existing declarations
+  c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(115): note: 'const V &TablaHashAbierto<C,V>::Obtener(const C &) const'
+c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(122): error C2244: 'TablaHashAbierto::Largo': unable to match function definition to an existing declaration
+  c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(120): note: see declaration of 'TablaHashAbierto::Largo'
+  c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(122): note: definition
+  c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(122): note: 'nat TablaHashAbierto::Largo(void) const'
+  c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(122): note: existing declarations
+  c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(122): note: 'nat TablaHashAbierto<C,V>::Largo(void) const'
+c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(127): error C2065: 'Tabla': undeclared identifier
+c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(127): error C2977: 'Puntero': too many template arguments
+  c:\users\agustin\documents\github\algoritmos2obl2\framework\array.h(4): note: see declaration of 'Puntero'
+c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(127): error C2988: unrecognizable template declaration/definition
+c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(127): error C2059: syntax error: '>'
+c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(133): error C2065: 'T': undeclared identifier
+c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(133): error C2923: 'Iterador': 'T' is not a valid template type argument for parameter 'T'
+c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(133): error C2143: syntax error: missing ';' before '{'
+c:\users\agustin\documents\github\algoritmos2obl2\entrega2\tablahashabierto.cpp(133): error C2447: '{': missing function header (old-style formal list?)

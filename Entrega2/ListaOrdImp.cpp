@@ -46,6 +46,23 @@ void ListaOrdImp<T>::InsertarOrdenado(const T& e) {
 	this->largo = this->largo + 1;
 }
 
+// PRE: 
+// POS: Inserta el elemento al principio
+template <class T>
+void InsertarPrincipio(const T& e) {
+	this->largo = this->largo + 1;
+	if (this->lista != NULL) {
+		Puntero<NodoLista<T>> nodo = new NodoLista<T>(e);
+		nodo->siguiente = this->lista;
+		this->lista = nodo;
+	}
+	else {
+		Puntero<NodoLista<T>> nodo = new NodoLista<T>(e);
+		nodo->siguiente = NULL;
+		this->lista = nodo;
+	}
+}
+
 // PRE: La lista no está vacía
 // POS: Retorna el primer elemento de la lista
 template <class T>

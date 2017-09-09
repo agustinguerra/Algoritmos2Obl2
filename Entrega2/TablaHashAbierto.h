@@ -1,6 +1,9 @@
 #pragma once
 
 #include "Tupla.h"
+#include "Array.h"
+#include "ListaOrdImp.h"
+#include "FuncionHash.h"
 
 template <class C, class V>
 class TablaHashAbierto : public Table<C, V>
@@ -40,6 +43,10 @@ public:
 	//POS: Retorna true si T(c) está definida, es decir, si la clave c está definida. False sino.
 	bool EstaDefinida(const C& c) const override;
 
+	//Pre: n mayor que 1
+	//Pos: devuelve true si el numero dado es primo
+	bool esPrimo(int n);
+
 	/* SELECTORAS */
 
 	//PRE: T(c) está definida
@@ -54,12 +61,15 @@ public:
 	//POS: Devuelve un clon de la tabla, no comparten memoria
 	Puntero<Tabla<C, V>> Clonar() const override;
 
+	//PRE: -
+	//POS: Devuelve el iterador
 	Iterador<T> ObtenerIterador() const override;
 
 private:
 	Array<Puntero<ListaOrdImp<Tupla<C, V>>>> laTabla;
-	Puntero<FunctionHash<D>> pFunc;
-	nat tamano;
+	Puntero<FunctionHash<C>> pFunc;
+	int tamano;
+	int ocupados;
 
 };
 
