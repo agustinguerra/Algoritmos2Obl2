@@ -10,7 +10,7 @@
 template <class C, class V>
 TablaHashAbierto<C, V>::TablaHashAbierto(nat cubetas, Puntero<FuncionHash<C>> fHash, const Comparador<C> comp) {
 	int cub = cubetas;
-	int primerPrimo = sigPrimo(100000);
+	int primerPrimo = sigPrimo(150000);
 	this->tamano = primerPrimo;
 	this->comparador = comp;
 	this->pFunc = fHash;
@@ -158,8 +158,9 @@ const V& TablaHashAbierto<C, V>::Obtener(const C& c) const {
 	int lugar = clave;
 	Tupla<C, V> tupp(c,V());
 	int ubicacion = this->laTabla[lugar]->indexOf(tupp);
-	Tupla<C, V> tup = this->laTabla[lugar]->Obtener(ubicacion);
-	return tup.ObtenerDato2();
+	//Tupla<C, V> tup = this->laTabla[lugar]->Obtener(ubicacion);
+	//return tup.ObtenerDato2();
+	return  this->laTabla[lugar]->Obtener(ubicacion).Dato2;
 }
 
 //PRE: -
