@@ -5,7 +5,7 @@
 template <class C,class V>
 class ComparadorTupla : public Comparacion<Tupla<C,V>> {
 public:
-	const Comparador<C>& comparador;
+	const Comparador<C> comparador;
 	//Pre: -
 	//Pos: Crea el comparador
 	ComparadorTupla(const Comparador<C>&c) : comparador(c) {  };

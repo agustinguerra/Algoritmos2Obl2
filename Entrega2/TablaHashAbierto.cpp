@@ -10,15 +10,16 @@
 template <class C, class V>
 TablaHashAbierto<C, V>::TablaHashAbierto(nat cubetas, Puntero<FuncionHash<C>> fHash, const Comparador<C> comp) {
 	int cub = cubetas;
-	int primerPrimo = sigPrimo(cub);
+	int primerPrimo = sigPrimo(100000);
 	this->tamano = primerPrimo;
 	this->comparador = comp;
 	this->pFunc = fHash;
 	this->ocupados = 0;
 	this->largo = 0;
-	Comparador<Tupla<C, V>> compTupF = Comparador<Tupla<C, V>>(new ComparadorTupla<C,V>(comp));
+	Comparador<Tupla<C, V>> compTupF =  Comparador<Tupla<C, V>>(new ComparadorTupla<C,V>(comp));
 	this->elComparador = compTupF;
 	Array<Puntero<ListaOrdImp<Tupla<C, V>>>> arr (primerPrimo);
+	this->laTabla = arr;
 	for (int i = 0; i < primerPrimo; i++) {
 		this->laTabla[i] = nullptr;
 	}
@@ -30,9 +31,10 @@ template <class C, class V>
 void TablaHashAbierto<C, V>::Agregar(const C& c, const V& v) {
 	nat clave = this->pFunc->CodigoDeHash(c);
 	int lugar = clave;
-	if (laTabla[lugar] == NULL) {
+	if (laTabla[lugar] == nullptr) {
 		ocupados = ocupados + 1;
 		laTabla[lugar] = new ListaOrdImp<Tupla<C, V>>(elComparador);
+		laTabla[lugar]->InsertarOrdenado(Tupla<C, V>(c, v));
 	}
 	else {
 		laTabla[lugar]->InsertarOrdenado(Tupla<C, V>(c, v));
@@ -49,7 +51,7 @@ void TablaHashAbierto<C, V>::Borrar(const C& c) {
 	Tupla<C, V> tupla(c,V());
 	this->laTabla[lugar]->Eliminar(tupla);
 	largo = largo - 1;
-	if (this->laTabla[lugar] == NULL) {
+	if (this->laTabla[lugar] == nullptr) {
 		ocupados = ocupados - 1;
 	}
 }
@@ -94,9 +96,9 @@ bool TablaHashAbierto<C, V>::EstaDefinida(const C& c) const {
 	nat clave = this->pFunc->CodigoDeHash(c);
 	int lugar = clave;
 	bool pert = false;
-	if (this->laTabla[lugar] != NULL) {
+	if (this->laTabla[lugar] != nullptr) {
 		Tupla<C, V> tupp(c, V());
-		bool pert = this->laTabla[lugar]->Pertenece(tupp);
+		pert = this->laTabla[lugar]->Pertenece(tupp);
 	}
 	else {
 		return false;
@@ -164,7 +166,7 @@ const V& TablaHashAbierto<C, V>::Obtener(const C& c) const {
 //POS: Retorna el largo de la tabla
 template <class C, class V>
 nat TablaHashAbierto<C, V>::Largo() const {
-	return this->tamano;
+	return this->largo;
 }
 
 //PRE: -
