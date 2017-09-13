@@ -2,6 +2,7 @@
 #define TABLAHASHABIERTO_CPP
 
 #include "TablaHashAbierto.h"
+#include "IteradorHashAbierto.h"
 
 /* CONSTRUCTORAS */
 
@@ -180,6 +181,17 @@ Puntero<Tabla<C, V>> TablaHashAbierto<C, V>::Clonar() const {
 //POS: Devuelve el iterador
 template <class C, class V>
 Iterador<Tupla<C,V>> TablaHashAbierto<C, V>::ObtenerIterador() const {
+	Puntero<ListaOrdImp<Tupla<C,V>>> lista = new ListaOrdImp<Tupla<C,V>>(elComparador);
+	for (int i = 0; i < tamano; i++) {
+		if (laTabla[i]!=nullptr){
+			Iterador<Tupla<C,V>> it = laTabla[i]->ObtenerIterador();
+			while (it.HayElemento()) {
+				lista->InsertarFinal(Tupla<C, V>(it.ElementoActual().Dato1, it.ElementoActual().Dato2));
+				it.Avanzar();
+			}
+		}
+	}
+ 	//return new IteradorHashAbierto<Tupla<C,V>>(lista,tamano,0);
 	return nullptr;
 }
 

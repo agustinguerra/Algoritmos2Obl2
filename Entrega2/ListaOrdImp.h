@@ -38,6 +38,10 @@ public:
 	// POS: Inserta el elemento al principio
 	void InsertarPrincipio(const T& e);
 
+	// PRE: 
+	// POS: Inserta el elemento al final
+	void ListaOrdImp<T>::InsertarFinal(const T& e);
+
 	// PRE: La lista no está vacía
 	// POS: Retorna el primer elemento de la lista
 	const T& Cabeza() const override;

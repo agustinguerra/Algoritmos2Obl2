@@ -73,6 +73,26 @@ void ListaOrdImp<T>::InsertarPrincipio(const T& e) {
 	}
 }
 
+// PRE: 
+// POS: Inserta el elemento al final
+template <class T>
+void ListaOrdImp<T>::InsertarFinal(const T& e) {
+	Puntero<NodoLista<T>> nodo = new NodoLista<T>(e);
+	nodo->siguiente = nullptr;
+	Puntero<NodoLista<T>> aux = this->lista;
+	if (aux == nullptr) {
+		this->lista = nodo;
+	}
+	else {
+		while (aux->siguiente != nullptr) {
+			aux = aux->siguiente;
+		}
+		aux->siguiente = nodo;
+	}
+
+	this->largo = this->largo + 1;
+}
+
 // PRE: La lista no está vacía
 // POS: Retorna el primer elemento de la lista
 template <class T>

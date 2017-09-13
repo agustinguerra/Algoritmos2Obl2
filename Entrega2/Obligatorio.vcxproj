@@ -105,6 +105,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Sistema.cpp" />
     <ClCompile Include="SistemaTemplates.cpp" />
+    <ClCompile Include="TablaHashCerrado.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CasoDePrueba.h" />
@@ -117,6 +118,7 @@
     <ClInclude Include="NodoArbol.h" />
     <ClInclude Include="Sistema.h" />
     <ClInclude Include="Tabla.h" />
+    <ClInclude Include="TablaHashCerrado.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -54,6 +54,9 @@
     <ClCompile Include="IteradorHashAbierto.cpp">
       <Filter>Implementacion</Filter>
     </ClCompile>
+    <ClCompile Include="TablaHashCerrado.cpp">
+      <Filter>Implementacion\Tads\Tabla\Hash cerrado</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CasoDePrueba.h">
@@ -85,6 +88,9 @@
     </ClInclude>
     <ClInclude Include="IteradorHashAbierto.h">
       <Filter>Implementacion</Filter>
+    </ClInclude>
+    <ClInclude Include="TablaHashCerrado.h">
+      <Filter>Implementacion\Tads\Tabla\Hash cerrado</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
