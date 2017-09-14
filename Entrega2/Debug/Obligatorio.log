@@ -1,12 +1,3 @@
-﻿  CasoDePrueba.cpp
-  ComparadorTupla.cpp
-  IteradorHashAbierto.cpp
-  TablaHashAbierto.cpp
-  IteradorListaOrdImp.cpp
-  ListaOrdImp.cpp
-  main.cpp
-  Sistema.cpp
-  SistemaTemplates.cpp
-  TablaHashCerrado.cpp
-  Obligatorio.vcxproj -> C:\Users\Agustin\Documents\GitHub\Algoritmos2Obl2\Entrega2\Debug\Obligatorio.exe
+﻿  Sistema.cpp
+  Obligatorio.vcxproj -> C:\Users\Usuario\Documents\GitHub\Algoritmos2Obl2\Entrega2\Debug\Obligatorio.exe
   Obligatorio.vcxproj -> Debug\Obligatorio.pdb (Full PDB)

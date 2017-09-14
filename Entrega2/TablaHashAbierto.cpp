@@ -32,6 +32,7 @@ template <class C, class V>
 void TablaHashAbierto<C, V>::Agregar(const C& c, const V& v) {
 	nat clave = this->pFunc->CodigoDeHash(c);
 	int lugar = clave;
+	lugar = lugar % this->tamano;
 	if (laTabla[lugar] == nullptr) {
 		ocupados = ocupados + 1;
 		laTabla[lugar] = new ListaOrdImp<Tupla<C, V>>(elComparador);
@@ -49,6 +50,7 @@ template <class C, class V>
 void TablaHashAbierto<C, V>::Borrar(const C& c) {
 	nat clave = this->pFunc->CodigoDeHash(c);
 	int lugar = clave;
+	lugar = lugar % this->tamano;
 	Tupla<C, V> tupla(c,V());
 	this->laTabla[lugar]->Eliminar(tupla);
 	largo = largo - 1;
@@ -96,6 +98,7 @@ template <class C, class V>
 bool TablaHashAbierto<C, V>::EstaDefinida(const C& c) const {
 	nat clave = this->pFunc->CodigoDeHash(c);
 	int lugar = clave;
+	lugar = lugar % this->tamano;
 	bool pert = false;
 	if (this->laTabla[lugar] != nullptr) {
 		Tupla<C, V> tupp(c, V());
@@ -157,6 +160,7 @@ template <class C, class V>
 const V& TablaHashAbierto<C, V>::Obtener(const C& c) const {
 	nat clave = this->pFunc->CodigoDeHash(c);
 	int lugar = clave;
+	lugar = lugar % this->tamano;
 	Tupla<C, V> tupp(c,V());
 	int ubicacion = this->laTabla[lugar]->indexOf(tupp);
 	//Tupla<C, V> tup = this->laTabla[lugar]->Obtener(ubicacion);
@@ -181,18 +185,36 @@ Puntero<Tabla<C, V>> TablaHashAbierto<C, V>::Clonar() const {
 //POS: Devuelve el iterador
 template <class C, class V>
 Iterador<Tupla<C,V>> TablaHashAbierto<C, V>::ObtenerIterador() const {
-	Puntero<ListaOrdImp<Tupla<C,V>>> lista = new ListaOrdImp<Tupla<C,V>>(elComparador);
-	for (int i = 0; i < tamano; i++) {
-		if (laTabla[i]!=nullptr){
-			Iterador<Tupla<C,V>> it = laTabla[i]->ObtenerIterador();
-			while (it.HayElemento()) {
-				lista->InsertarFinal(Tupla<C, V>(it.ElementoActual().Dato1, it.ElementoActual().Dato2));
-				it.Avanzar();
+	int aux = 0;
+	Array<Tupla<C, V>> ret = Array <Tupla<C, V>>(this->largo);
+	Iterador<Puntero<ListaOrdImp<Tupla<C, V>>>> it = this->laTabla.ObtenerIterador();
+	while (it.HayElemento()) {
+		Puntero<ListaOrdImp<Tupla<C, V>>> lista = it.ElementoActual();
+		if (lista != NULL) {
+			Iterador<Tupla<C, V>> itLista = lista->ObtenerIterador();
+			while (itLista.HayElemento()) {
+				ret[aux] = itLista.ElementoActual();
+				aux++;
+				itLista.Avanzar();
 			}
 		}
+		it.Avanzar();
 	}
- 	//return new IteradorHashAbierto<Tupla<C,V>>(lista,tamano,0);
-	return nullptr;
+	return ret.ObtenerIterador();
+
+
+	//Puntero<ListaOrdImp<Tupla<C,V>>> lista = new ListaOrdImp<Tupla<C,V>>(elComparador);
+	//for (int i = 0; i < tamano; i++) {
+	//	if (laTabla[i]!=nullptr){
+	//		Iterador<Tupla<C,V>> it = laTabla[i]->ObtenerIterador();
+	//		while (it.HayElemento()) {
+	//			lista->InsertarFinal(Tupla<C, V>(it.ElementoActual().Dato1, it.ElementoActual().Dato2));
+	//			it.Avanzar();
+	//		}
+	//	}
+	//}
+ //	return new IteradorHashAbierto<Tupla<C,V>>(lista,tamano,0);
+	//return nullptr;
 }
 
 #endif

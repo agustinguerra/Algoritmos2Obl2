@@ -98,6 +98,7 @@
   <ItemGroup>
     <ClCompile Include="CasoDePrueba.cpp" />
     <ClCompile Include="ComparadorTupla.cpp" />
+    <ClCompile Include="FuncionHashAnagrama.cpp" />
     <ClCompile Include="IteradorHashAbierto.cpp" />
     <ClCompile Include="TablaHashAbierto.cpp" />
     <ClCompile Include="IteradorListaOrdImp.cpp" />
@@ -110,6 +111,7 @@
   <ItemGroup>
     <ClInclude Include="CasoDePrueba.h" />
     <ClInclude Include="ComparadorTupla.h" />
+    <ClInclude Include="FuncionHashAnagrama.h" />
     <ClInclude Include="IteradorHashAbierto.h" />
     <ClInclude Include="TablaHashAbierto.h" />
     <ClInclude Include="IteradorListaOrdImp.h" />

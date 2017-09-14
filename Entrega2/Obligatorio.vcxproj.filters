@@ -57,6 +57,9 @@
     <ClCompile Include="TablaHashCerrado.cpp">
       <Filter>Implementacion\Tads\Tabla\Hash cerrado</Filter>
     </ClCompile>
+    <ClCompile Include="FuncionHashAnagrama.cpp">
+      <Filter>Implementacion</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CasoDePrueba.h">
@@ -91,6 +94,9 @@
     </ClInclude>
     <ClInclude Include="TablaHashCerrado.h">
       <Filter>Implementacion\Tads\Tabla\Hash cerrado</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncionHashAnagrama.h">
+      <Filter>Implementacion</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

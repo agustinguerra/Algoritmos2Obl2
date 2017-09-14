@@ -7,6 +7,8 @@
 #include "NodoArbol.h"
 #include "Tabla.h"
 #include "FuncionHash.h"
+#include "TablaHashAbierto.h"
+#include "FuncionHashAnagrama.h"
 
 class Sistema
 {
@@ -31,7 +33,8 @@ public:
 
 private:
 	//Atributos necesarios para cumplir con las operaciones.
-
+	//template<class C,class V>
+	Puntero<TablaHashAbierto<Cadena, Cadena>> hashAbierto;
 };
 
 
