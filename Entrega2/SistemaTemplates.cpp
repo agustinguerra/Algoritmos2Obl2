@@ -3,6 +3,7 @@
 
 #include "Sistema.h"
 #include "TablaHashAbierto.h"
+#include "TablaHashCerrado.h"
 
 template <class C, class V>
 Puntero<Tabla<C, V>> Sistema::CrearTablaHashAbierto(nat cubetas, Puntero<FuncionHash<C>> fHash, const Comparador<C>& comp)
@@ -14,7 +15,8 @@ Puntero<Tabla<C, V>> Sistema::CrearTablaHashAbierto(nat cubetas, Puntero<Funcion
 template <class C, class V>
 Puntero<Tabla<C, V>> Sistema::CrearTablaHashCerrado(nat cubetas, Puntero<FuncionHash<C>> fHash, const Comparador<C>& comp)
 {
-	return NULL;
+	Puntero<Tabla<C, V>> tabla = new TablaHashCerrado<C,V>(cubetas, fHash, comp);
+	return tabla;
 }
 
 
