@@ -437,16 +437,6 @@
   Retorno obtenido OK
 ---------------------------------------------------------------------
 
------------------------------ Testeo --------------------------------
-  Comentario: Se obtuvo roma correctamente
-  Retorno obtenido OK
----------------------------------------------------------------------
-
------------------------------ Testeo --------------------------------
-  Comentario: Se verifica la cantidad de elementos de los conjuntos
-  Retorno obtenido ERROR, se esperaba OK
----------------------------------------------------------------------
-
 
 
 ********************************************* Pruebas Anagramas de rmoa OK *********************************************
@@ -476,16 +466,6 @@
 ----------------------------- Testeo --------------------------------
   Comentario: Se obtuvo ramo correctamente
   Retorno obtenido OK
----------------------------------------------------------------------
-
------------------------------ Testeo --------------------------------
-  Comentario: Se obtuvo roma correctamente
-  Retorno obtenido OK
----------------------------------------------------------------------
-
------------------------------ Testeo --------------------------------
-  Comentario: Se verifica la cantidad de elementos de los conjuntos
-  Retorno obtenido ERROR, se esperaba OK
 ---------------------------------------------------------------------
 
 
@@ -758,7 +738,7 @@
 ---------------------------------------------------------------------
 
   +------------------------------+
-    Pruebas Correctas : 131
-    Pruebas Incorrectas: 2
+    Pruebas Correctas : 129
+    Pruebas Incorrectas: 0
     Pruebas NI: 0
   +------------------------------+

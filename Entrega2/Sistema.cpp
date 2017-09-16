@@ -126,6 +126,16 @@ Sistema::~Sistema()
 {
 }
 
+bool existeEnLista(Puntero<ListaOrdImp<Cadena>> l, const Comparador<Cadena>& comp, Cadena cad) {
+	int largoL = l->Largo();
+	bool existe = false;
+	for (int i = 0; i < largoL; i++) {
+		if (comp.Comparar(cad, l->Obtener(i)) == IGUALES) {
+			existe = true;
+		}
+	}
+	return existe;
+}
 // Ejercicio 1: Anagramas
 Array<Cadena> Sistema::Anagramas(const Cadena& c)
 {
@@ -152,9 +162,11 @@ Array<Cadena> Sistema::Anagramas(const Cadena& c)
 	int contador = 0;
 	int agarrarElemento = 0;
 	int largoLista = aux->Largo();
+	Puntero<ListaOrdImp<Cadena>> listaElem = new ListaOrdImp<Cadena>(Comparador<Cadena>::Default);
 	while (agarrarElemento<largoLista) {
-		if (comp.Comparar(aux->Obtener(agarrarElemento).Dato1, claveOrdenada) == IGUALES) {
+		if (comp.Comparar(aux->Obtener(agarrarElemento).Dato1, claveOrdenada) == IGUALES && !existeEnLista(listaElem, Comparador<Cadena>::Default, aux->Obtener(agarrarElemento).Dato2)) {
 			contador++;
+			listaElem->InsertarOrdenado(aux->Obtener(agarrarElemento).Dato2);
 		}
 		agarrarElemento++;
 	}
@@ -173,6 +185,7 @@ Array<Cadena> Sistema::Anagramas(const Cadena& c)
 	}
 	punt = nullptr;
 	aux = nullptr;
+	listaElem = nullptr;
 	return retorno;
 }
 #endif
