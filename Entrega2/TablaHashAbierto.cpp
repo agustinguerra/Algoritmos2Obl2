@@ -154,6 +154,17 @@ int TablaHashAbierto<C, V>::sigPrimo(int num) {
 	return i;
 }
 
+//PRE: -
+//POS: devuelve la lista de una cubeta dada
+template <class C,class V>
+Puntero<ListaOrdImp<Tupla<C,V>>> TablaHashAbierto<C, V>::devuelvoLista(const C& c) {
+	nat clave = this->pFunc->CodigoDeHash(c);
+	int lugar = clave;
+	lugar = lugar % this->tamano;
+	return laTabla[lugar];
+}
+
+
 //PRE: T(c) está definida
 //POS: Retorna 'v', tal que T(c) = v
 template <class C, class V>

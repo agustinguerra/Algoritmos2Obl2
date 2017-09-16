@@ -54,6 +54,9 @@ public:
 	bool esPrimo(int n);
 
 	/* SELECTORAS */
+	//PRE: -
+	//POS: devuelve la lista de una cubeta dada
+	Puntero<ListaOrdImp<Tupla<C, V>>> devuelvoLista(const C& c);
 
 	//PRE: T(c) está definida
 	//POS: Retorna 'v', tal que T(c) = v

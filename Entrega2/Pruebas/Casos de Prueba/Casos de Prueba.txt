@@ -397,13 +397,13 @@
 
 
 ----------------------------- Testeo --------------------------------
-  Comentario: Se esperaba algoritmo
-  Retorno obtenido ERROR, se esperaba OK
+  Comentario: Se obtuvo algoritmo y se esperaba algoritmo
+  Retorno obtenido OK
 ---------------------------------------------------------------------
 
 ----------------------------- Testeo --------------------------------
-  Comentario: Se esperaba logaritmo
-  Retorno obtenido ERROR, se esperaba OK
+  Comentario: Se obtuvo logaritmo y se esperaba logaritmo
+  Retorno obtenido OK
 ---------------------------------------------------------------------
 
 
@@ -413,27 +413,37 @@
 
 
 ----------------------------- Testeo --------------------------------
-  Comentario: Se esperaba roma
-  Retorno obtenido ERROR, se esperaba OK
+  Comentario: Se obtuvo amor correctamente
+  Retorno obtenido OK
 ---------------------------------------------------------------------
 
 ----------------------------- Testeo --------------------------------
-  Comentario: Se esperaba amor
-  Retorno obtenido ERROR, se esperaba OK
+  Comentario: Se obtuvo maro correctamente
+  Retorno obtenido OK
 ---------------------------------------------------------------------
 
 ----------------------------- Testeo --------------------------------
-  Comentario: Se esperaba mora
-  Retorno obtenido ERROR, se esperaba OK
+  Comentario: Se obtuvo mora correctamente
+  Retorno obtenido OK
 ---------------------------------------------------------------------
 
 ----------------------------- Testeo --------------------------------
-  Comentario: Se esperaba maro
-  Retorno obtenido ERROR, se esperaba OK
+  Comentario: Se obtuvo roma correctamente
+  Retorno obtenido OK
 ---------------------------------------------------------------------
 
 ----------------------------- Testeo --------------------------------
-  Comentario: Se esperaba ramo
+  Comentario: Se obtuvo ramo correctamente
+  Retorno obtenido OK
+---------------------------------------------------------------------
+
+----------------------------- Testeo --------------------------------
+  Comentario: Se obtuvo roma correctamente
+  Retorno obtenido OK
+---------------------------------------------------------------------
+
+----------------------------- Testeo --------------------------------
+  Comentario: Se verifica la cantidad de elementos de los conjuntos
   Retorno obtenido ERROR, se esperaba OK
 ---------------------------------------------------------------------
 
@@ -444,27 +454,37 @@
 
 
 ----------------------------- Testeo --------------------------------
-  Comentario: Se esperaba roma
-  Retorno obtenido ERROR, se esperaba OK
+  Comentario: Se obtuvo amor correctamente
+  Retorno obtenido OK
 ---------------------------------------------------------------------
 
 ----------------------------- Testeo --------------------------------
-  Comentario: Se esperaba amor
-  Retorno obtenido ERROR, se esperaba OK
+  Comentario: Se obtuvo maro correctamente
+  Retorno obtenido OK
 ---------------------------------------------------------------------
 
 ----------------------------- Testeo --------------------------------
-  Comentario: Se esperaba mora
-  Retorno obtenido ERROR, se esperaba OK
+  Comentario: Se obtuvo mora correctamente
+  Retorno obtenido OK
 ---------------------------------------------------------------------
 
 ----------------------------- Testeo --------------------------------
-  Comentario: Se esperaba maro
-  Retorno obtenido ERROR, se esperaba OK
+  Comentario: Se obtuvo roma correctamente
+  Retorno obtenido OK
 ---------------------------------------------------------------------
 
 ----------------------------- Testeo --------------------------------
-  Comentario: Se esperaba ramo
+  Comentario: Se obtuvo ramo correctamente
+  Retorno obtenido OK
+---------------------------------------------------------------------
+
+----------------------------- Testeo --------------------------------
+  Comentario: Se obtuvo roma correctamente
+  Retorno obtenido OK
+---------------------------------------------------------------------
+
+----------------------------- Testeo --------------------------------
+  Comentario: Se verifica la cantidad de elementos de los conjuntos
   Retorno obtenido ERROR, se esperaba OK
 ---------------------------------------------------------------------
 
@@ -475,48 +495,48 @@
 
 
 ----------------------------- Testeo --------------------------------
-  Comentario: Se esperaba trapo
-  Retorno obtenido ERROR, se esperaba OK
+  Comentario: Se obtuvo optar correctamente
+  Retorno obtenido OK
 ---------------------------------------------------------------------
 
 ----------------------------- Testeo --------------------------------
-  Comentario: Se esperaba rapto
-  Retorno obtenido ERROR, se esperaba OK
+  Comentario: Se obtuvo parto correctamente
+  Retorno obtenido OK
 ---------------------------------------------------------------------
 
 ----------------------------- Testeo --------------------------------
-  Comentario: Se esperaba porta
-  Retorno obtenido ERROR, se esperaba OK
+  Comentario: Se obtuvo porta correctamente
+  Retorno obtenido OK
 ---------------------------------------------------------------------
 
 ----------------------------- Testeo --------------------------------
-  Comentario: Se esperaba potra
-  Retorno obtenido ERROR, se esperaba OK
+  Comentario: Se obtuvo potar correctamente
+  Retorno obtenido OK
 ---------------------------------------------------------------------
 
 ----------------------------- Testeo --------------------------------
-  Comentario: Se esperaba tropa
-  Retorno obtenido ERROR, se esperaba OK
+  Comentario: Se obtuvo potra correctamente
+  Retorno obtenido OK
 ---------------------------------------------------------------------
 
 ----------------------------- Testeo --------------------------------
-  Comentario: Se esperaba optar
-  Retorno obtenido ERROR, se esperaba OK
+  Comentario: Se obtuvo rapto correctamente
+  Retorno obtenido OK
 ---------------------------------------------------------------------
 
 ----------------------------- Testeo --------------------------------
-  Comentario: Se esperaba parto
-  Retorno obtenido ERROR, se esperaba OK
+  Comentario: Se obtuvo topar correctamente
+  Retorno obtenido OK
 ---------------------------------------------------------------------
 
 ----------------------------- Testeo --------------------------------
-  Comentario: Se esperaba potar
-  Retorno obtenido ERROR, se esperaba OK
+  Comentario: Se obtuvo trapo correctamente
+  Retorno obtenido OK
 ---------------------------------------------------------------------
 
 ----------------------------- Testeo --------------------------------
-  Comentario: Se esperaba topar
-  Retorno obtenido ERROR, se esperaba OK
+  Comentario: Se obtuvo tropa correctamente
+  Retorno obtenido OK
 ---------------------------------------------------------------------
 
 
@@ -526,8 +546,8 @@
 
 
 ----------------------------- Testeo --------------------------------
-  Comentario: Se esperaba logos
-  Retorno obtenido ERROR, se esperaba OK
+  Comentario: Se obtuvo logos correctamente
+  Retorno obtenido OK
 ---------------------------------------------------------------------
 
 
@@ -537,8 +557,8 @@
 
 
 ----------------------------- Testeo --------------------------------
-  Comentario: Se esperaba logos
-  Retorno obtenido ERROR, se esperaba OK
+  Comentario: Se obtuvo logos correctamente
+  Retorno obtenido OK
 ---------------------------------------------------------------------
 
 
@@ -548,18 +568,18 @@
 
 
 ----------------------------- Testeo --------------------------------
-  Comentario: Se esperaba paleto
-  Retorno obtenido ERROR, se esperaba OK
+  Comentario: Se obtuvo paleto correctamente
+  Retorno obtenido OK
 ---------------------------------------------------------------------
 
 ----------------------------- Testeo --------------------------------
-  Comentario: Se esperaba pelota
-  Retorno obtenido ERROR, se esperaba OK
+  Comentario: Se obtuvo palote correctamente
+  Retorno obtenido OK
 ---------------------------------------------------------------------
 
 ----------------------------- Testeo --------------------------------
-  Comentario: Se esperaba palote
-  Retorno obtenido ERROR, se esperaba OK
+  Comentario: Se obtuvo pelota correctamente
+  Retorno obtenido OK
 ---------------------------------------------------------------------
 
 
@@ -569,28 +589,28 @@
 
 
 ----------------------------- Testeo --------------------------------
-  Comentario: Se esperaba estor
-  Retorno obtenido ERROR, se esperaba OK
+  Comentario: Se obtuvo estor correctamente
+  Retorno obtenido OK
 ---------------------------------------------------------------------
 
 ----------------------------- Testeo --------------------------------
-  Comentario: Se esperaba estro
-  Retorno obtenido ERROR, se esperaba OK
+  Comentario: Se obtuvo estro correctamente
+  Retorno obtenido OK
 ---------------------------------------------------------------------
 
 ----------------------------- Testeo --------------------------------
-  Comentario: Se esperaba resto
-  Retorno obtenido ERROR, se esperaba OK
+  Comentario: Se obtuvo resto correctamente
+  Retorno obtenido OK
 ---------------------------------------------------------------------
 
 ----------------------------- Testeo --------------------------------
-  Comentario: Se esperaba terso
-  Retorno obtenido ERROR, se esperaba OK
+  Comentario: Se obtuvo terso correctamente
+  Retorno obtenido OK
 ---------------------------------------------------------------------
 
 ----------------------------- Testeo --------------------------------
-  Comentario: Se esperaba toser
-  Retorno obtenido ERROR, se esperaba OK
+  Comentario: Se obtuvo toser correctamente
+  Retorno obtenido OK
 ---------------------------------------------------------------------
 
 
@@ -600,43 +620,43 @@
 
 
 ----------------------------- Testeo --------------------------------
-  Comentario: Se esperaba arrate
-  Retorno obtenido ERROR, se esperaba OK
+  Comentario: Se obtuvo arrate correctamente
+  Retorno obtenido OK
 ---------------------------------------------------------------------
 
 ----------------------------- Testeo --------------------------------
-  Comentario: Se esperaba artera
-  Retorno obtenido ERROR, se esperaba OK
+  Comentario: Se obtuvo artera correctamente
+  Retorno obtenido OK
 ---------------------------------------------------------------------
 
 ----------------------------- Testeo --------------------------------
-  Comentario: Se esperaba atraer
-  Retorno obtenido ERROR, se esperaba OK
+  Comentario: Se obtuvo atraer correctamente
+  Retorno obtenido OK
 ---------------------------------------------------------------------
 
 ----------------------------- Testeo --------------------------------
-  Comentario: Se esperaba errata
-  Retorno obtenido ERROR, se esperaba OK
+  Comentario: Se obtuvo errata correctamente
+  Retorno obtenido OK
 ---------------------------------------------------------------------
 
 ----------------------------- Testeo --------------------------------
-  Comentario: Se esperaba etarra
-  Retorno obtenido ERROR, se esperaba OK
+  Comentario: Se obtuvo etarra correctamente
+  Retorno obtenido OK
 ---------------------------------------------------------------------
 
 ----------------------------- Testeo --------------------------------
-  Comentario: Se esperaba ratear
-  Retorno obtenido ERROR, se esperaba OK
+  Comentario: Se obtuvo ratear correctamente
+  Retorno obtenido OK
 ---------------------------------------------------------------------
 
 ----------------------------- Testeo --------------------------------
-  Comentario: Se esperaba ratera
-  Retorno obtenido ERROR, se esperaba OK
+  Comentario: Se obtuvo ratera correctamente
+  Retorno obtenido OK
 ---------------------------------------------------------------------
 
 ----------------------------- Testeo --------------------------------
-  Comentario: Se esperaba reatar
-  Retorno obtenido ERROR, se esperaba OK
+  Comentario: Se obtuvo reatar correctamente
+  Retorno obtenido OK
 ---------------------------------------------------------------------
 
 
@@ -646,38 +666,38 @@
 
 
 ----------------------------- Testeo --------------------------------
-  Comentario: Se esperaba acerbo
-  Retorno obtenido ERROR, se esperaba OK
+  Comentario: Se obtuvo acerbo correctamente
+  Retorno obtenido OK
 ---------------------------------------------------------------------
 
 ----------------------------- Testeo --------------------------------
-  Comentario: Se esperaba barceo
-  Retorno obtenido ERROR, se esperaba OK
+  Comentario: Se obtuvo barceo correctamente
+  Retorno obtenido OK
 ---------------------------------------------------------------------
 
 ----------------------------- Testeo --------------------------------
-  Comentario: Se esperaba bocear
-  Retorno obtenido ERROR, se esperaba OK
+  Comentario: Se obtuvo bocear correctamente
+  Retorno obtenido OK
 ---------------------------------------------------------------------
 
 ----------------------------- Testeo --------------------------------
-  Comentario: Se esperaba bocera
-  Retorno obtenido ERROR, se esperaba OK
+  Comentario: Se obtuvo bocera correctamente
+  Retorno obtenido OK
 ---------------------------------------------------------------------
 
 ----------------------------- Testeo --------------------------------
-  Comentario: Se esperaba braceo
-  Retorno obtenido ERROR, se esperaba OK
+  Comentario: Se obtuvo braceo correctamente
+  Retorno obtenido OK
 ---------------------------------------------------------------------
 
 ----------------------------- Testeo --------------------------------
-  Comentario: Se esperaba cabero
-  Retorno obtenido ERROR, se esperaba OK
+  Comentario: Se obtuvo cabero correctamente
+  Retorno obtenido OK
 ---------------------------------------------------------------------
 
 ----------------------------- Testeo --------------------------------
-  Comentario: Se esperaba cabreo
-  Retorno obtenido ERROR, se esperaba OK
+  Comentario: Se obtuvo cabreo correctamente
+  Retorno obtenido OK
 ---------------------------------------------------------------------
 
 
@@ -687,8 +707,8 @@
 
 
 ----------------------------- Testeo --------------------------------
-  Comentario: Se esperaba universidad
-  Retorno obtenido ERROR, se esperaba OK
+  Comentario: Se obtuvo universidad correctamente
+  Retorno obtenido OK
 ---------------------------------------------------------------------
 
 
@@ -696,3 +716,49 @@
 ********************************************* Pruebas Pruebas EsAVL OK *********************************************
 
 
+
+----------------------------- Testeo --------------------------------
+  Comentario: El parametro es un AVL
+  Retorno obtenido OK
+---------------------------------------------------------------------
+
+----------------------------- Testeo --------------------------------
+  Comentario: El parametro es un AVL
+  Retorno obtenido OK
+---------------------------------------------------------------------
+
+----------------------------- Testeo --------------------------------
+  Comentario: El parametro es un AVL
+  Retorno obtenido OK
+---------------------------------------------------------------------
+
+----------------------------- Testeo --------------------------------
+  Comentario: El parametro es un AVL
+  Retorno obtenido OK
+---------------------------------------------------------------------
+
+----------------------------- Testeo --------------------------------
+  Comentario: El parametro no es un AVL
+  Retorno obtenido OK
+---------------------------------------------------------------------
+
+----------------------------- Testeo --------------------------------
+  Comentario: El parametro no es un AVL
+  Retorno obtenido OK
+---------------------------------------------------------------------
+
+----------------------------- Testeo --------------------------------
+  Comentario: El parametro no es un AVL
+  Retorno obtenido OK
+---------------------------------------------------------------------
+
+----------------------------- Testeo --------------------------------
+  Comentario: El parametro no es un AVL
+  Retorno obtenido OK
+---------------------------------------------------------------------
+
+  +------------------------------+
+    Pruebas Correctas : 131
+    Pruebas Incorrectas: 2
+    Pruebas NI: 0
+  +------------------------------+

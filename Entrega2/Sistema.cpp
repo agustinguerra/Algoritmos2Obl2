@@ -129,6 +129,50 @@ Sistema::~Sistema()
 // Ejercicio 1: Anagramas
 Array<Cadena> Sistema::Anagramas(const Cadena& c)
 {
-	return NULL;
+	int largo = c.Largo;
+	Array<char> arrChar(largo);
+	string stringNoOrdenada("");
+	for (int k = 0; k < largo; k++) {
+		stringNoOrdenada += c[k];
+	}
+	std::transform(stringNoOrdenada.begin(), stringNoOrdenada.end(), stringNoOrdenada.begin(), ::tolower);
+	Cadena claveMinuscula(stringNoOrdenada.c_str());
+	for (int j = 0; j < largo; j++) {
+		arrChar[j] = claveMinuscula[j];
+	}
+	mergeSortAux<char>(arrChar, 0, largo - 1, Comparador<char>::Default);
+	string stringOrdenada("");
+	for (int k = 0; k < largo; k++) {
+		stringOrdenada += arrChar[k];
+	}
+	Cadena claveOrdenada(stringOrdenada.c_str());
+	Comparador<Cadena> comp ;
+	Puntero<ListaOrdImp<Tupla<Cadena,Cadena>>> punt = hashAbierto->devuelvoLista(claveOrdenada);
+	Puntero<ListaOrdImp<Tupla<Cadena, Cadena>>> aux = punt;
+	int contador = 0;
+	int agarrarElemento = 0;
+	int largoLista = aux->Largo();
+	while (agarrarElemento<largoLista) {
+		if (comp.Comparar(aux->Obtener(agarrarElemento).Dato1, claveOrdenada) == IGUALES) {
+			contador++;
+		}
+		agarrarElemento++;
+	}
+	agarrarElemento = 0;
+	Array<Cadena> retorno(contador);
+	bool encontre = false;
+	for (int i = 0; i < contador; i++) {
+		while (!encontre) {
+			if (comp.Comparar(aux->Obtener(agarrarElemento).Dato1, claveOrdenada) == IGUALES) {
+				encontre = true;
+				retorno[i] = aux->Obtener(agarrarElemento).Dato2;
+			}
+			agarrarElemento++;
+		}
+		encontre = false;
+	}
+	punt = nullptr;
+	aux = nullptr;
+	return retorno;
 }
 #endif
